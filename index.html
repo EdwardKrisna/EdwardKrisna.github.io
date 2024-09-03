@@ -303,24 +303,20 @@
         
         <!-- New Bank Marketing Campaign project -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/finpro_ppt/Slide1.PNG" class="img-fluid" alt="Bank Marketing Campaign">
-            <div class="portfolio-info">
-              <h4>Bank Marketing Campaign</h4>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/finpro_ppt/Slide1.PNG" data-gallery="bankMarketingGallery" class="portfolio-lightbox" title="Bank Marketing Campaign - Slide 1">
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="https://github.com/PurwadhikaDev/HeraldGroup_DTI_01_FinalProject" target="_blank" title="GitHub Repository">
-                  <i class="bx bx-link"></i>
-                </a>
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/finpro_ppt/Slide1.PNG" class="img-fluid" alt="Bank Marketing Campaign">
+              <div class="portfolio-info">
+                <h4>Bank Marketing Campaign</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/finpro_ppt/Slide1.PNG" data-gallery="bankMarketingGallery" class="portfolio-lightbox" title="Bank Marketing Campaign - Slide 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/PurwadhikaDev/HeraldGroup_DTI_01_FinalProject" target="_blank" title="GitHub Repository"><i class="bx bx-link"></i></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Hidden gallery items -->
-        <div style="display: none;">
+          
+          <!-- Gallery items for Bank Marketing Campaign -->
+          <div class="portfolio-gallery" style="display: none;">
           <a href="assets/img/portfolio/finpro_ppt/Slide2.PNG" data-gallery="bankMarketingGallery" title="Bank Marketing Campaign - Slide 2"></a>
           <a href="assets/img/portfolio/finpro_ppt/Slide3.PNG" data-gallery="bankMarketingGallery" title="Bank Marketing Campaign - Slide 3"></a>
           <a href="assets/img/portfolio/finpro_ppt/Slide4.PNG" data-gallery="bankMarketingGallery" title="Bank Marketing Campaign - Slide 4"></a>
@@ -547,6 +543,14 @@
     }
   
     setInterval(changeImage, 3000); // Change image every 3 seconds
+  </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const lightbox = GLightbox({
+          selector: '[data-gallery]'
+      });
+  });
   </script>
 
 </body>
